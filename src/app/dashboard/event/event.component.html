@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row p-2">
+        <div class="col"  *ngFor="let event of events">
+            <div class="card mx-auto border-dark mb-3" style="width: 18rem; height: 18rem;">
+                <div class="card-body text-align-center p-3">
+                  <h5 class="card-title">{{event.eventName}}</h5>
+                  <p class="card-text">{{event.eventTopic}} </p>
+                  <p class="card-text">@{{event.eventPlace}} </p>
+                  <span class="small help-block pb-2"><img class="pr-1" src="../../../assets/clock.svg">  {{event.eventStartTime}} to {{event.eventEndTime}}</span>
+                  <br>
+                  <span class="small help-block pb-2"><img class="pr-1" src="../../../assets/telephone.svg">  {{event.contactPerson}} {{event.contactPersonNumber}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
